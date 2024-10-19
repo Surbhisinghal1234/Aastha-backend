@@ -11,7 +11,7 @@ const CompanyTable = () => {
   useEffect(() => {
     const fetchCompanies = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/jobs'); 
+        const response = await axios.get('https://aastha-backend.onrender.com/api/jobs'); 
         setCompanies(response.data); 
       } catch (error) {
         console.error('Error fetching companies:', error);

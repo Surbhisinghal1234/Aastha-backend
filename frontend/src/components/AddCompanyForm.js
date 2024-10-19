@@ -19,7 +19,7 @@ const AddCompanyForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/jobs', formData);
+      const response = await axios.post('https://aastha-backend.onrender.com/api/jobs', formData);
       console.log('Company added successfully:', response.data);
     } catch (error) {
       console.error('There was an error!', error);
